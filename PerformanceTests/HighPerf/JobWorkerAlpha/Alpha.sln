@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "benchmarkmongo", "benchmarkmongo\benchmarkmongo.csproj", "{46B93D1D-A31F-4AC1-AD74-C116C85B4696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jobs.worker", "jobs.worker\jobs.worker.csproj", "{75175084-EB9C-4A34-9E1B-CB4E7DAAEB05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jobs.worker.communications", "jobs.worker.communications\jobs.worker.communications.csproj", "{A2FB9782-B545-4A34-AB40-0205D658132A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46B93D1D-A31F-4AC1-AD74-C116C85B4696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B93D1D-A31F-4AC1-AD74-C116C85B4696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B93D1D-A31F-4AC1-AD74-C116C85B4696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B93D1D-A31F-4AC1-AD74-C116C85B4696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75175084-EB9C-4A34-9E1B-CB4E7DAAEB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75175084-EB9C-4A34-9E1B-CB4E7DAAEB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75175084-EB9C-4A34-9E1B-CB4E7DAAEB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75175084-EB9C-4A34-9E1B-CB4E7DAAEB05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2FB9782-B545-4A34-AB40-0205D658132A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FB9782-B545-4A34-AB40-0205D658132A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FB9782-B545-4A34-AB40-0205D658132A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FB9782-B545-4A34-AB40-0205D658132A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

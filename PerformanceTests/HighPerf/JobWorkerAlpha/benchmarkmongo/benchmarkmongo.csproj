@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
+        <PackageReference Include="BenchmarkDotNet.Annotations" Version="0.13.12" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0"/>
+        <PackageReference Include="mongocsharpdriver" Version="2.24.0" />
+        <PackageReference Include="Testcontainers" Version="3.8.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\jobs.worker.communications\jobs.worker.communications.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,35 @@
+syntax = "proto3";
+option csharp_namespace = "ThirdGrpc";
+package hub;
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/struct.proto";
+
+// The greeting service definition.
+service GRPCHubService {
+  // Sends a greeting
+  rpc CreateHub(rpcRequestCreateHub) returns (rpcResponseCreateHub);
+}
+
+
+message rpcRequestCreateHub {
+	string HubName = 1;
+	string HubDescription = 2;
+}
+
+message rpcResponseCreateHub{
+	rpcHubValue hub = 1;
+}
+
+message rpcHubValue{
+	oneof hubValueKind{
+		google.protobuf.NullValue hubValueNone = 1;
+		rpcHub hubValueValue = 2;
+	}
+}
+
+message rpcHub{
+	string id = 1;
+	string name = 2;
+	string description = 3;
+	google.protobuf.Timestamp createdAt = 4;
+}

@@ -1,0 +1,4 @@
+| Method       | N   | Mean     | Error    | StdDev   | Median   |
+|------------- |---- |---------:|---------:|---------:|---------:|
+| AsyncInserts | 100 | 72.41 ms | 1.437 ms | 3.244 ms | 72.32 ms |
+| SyncInserts  | 100 | 66.68 ms | 1.330 ms | 3.337 ms | 65.37 ms |

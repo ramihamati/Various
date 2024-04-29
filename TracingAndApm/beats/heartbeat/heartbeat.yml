@@ -1,0 +1,53 @@
+#Monitor the Elasticsearch instance.
+heartbeat.monitors:
+- type: http
+  name: FirstApi
+  enabled: true
+  schedule: '@every 5s'
+  urls: ["http://192.168.1.103:25002/health"]
+  ipv4: true
+  ipv6: true
+  mode: any
+  timeout: 3s
+  check.request:
+    method: "GET"
+  check.response:
+    status: 200
+
+- type: http
+  name: SecondApi
+  enabled: true
+  schedule: '@every 5s'
+  urls: ["http://192.168.1.103:25001/health"]
+  ipv4: true
+  ipv6: true
+  mode: any
+  timeout: 3s
+  check.request:
+    method: "GET"
+  check.response:
+    status: 200
+
+- type: http
+  name: SecondApi
+  enabled: true
+  schedule: '@every 5s'
+  urls: ["http://192.168.1.103:25003/health"]
+  ipv4: true
+  ipv6: true
+  mode: any
+  timeout: 3s
+  check.request:
+    method: "GET"
+  check.response:
+    status: 200
+
+monitoring.enabled: true
+
+output.elasticsearch:
+  hosts: ["http://192.168.1.103:9200"]
+  # username: "elastic"
+  # password: "<password>"
+setup.kibana:
+  host: "http://192.168.1.103:5601"
+logging.to_files: false
